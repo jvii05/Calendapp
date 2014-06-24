@@ -1,0 +1,28 @@
+{% extends 'logueo/base.html' %}
+
+{% block main %}
+ <div>
+ <h1>API2 FACE</h1>
+
+  <p>
+   <ul>
+   {% if user and not user.is_anonymous %}
+	
+       <a>Hello: {{ user.first_name }}  </a>
+       <a>Apellido: {{ user.last_name }} </a>
+       <a>Fec_Nac: {{ user.birthday }} </a>
+       <a>ID: {{ user.id }} </a>
+       <a>Email: {{ user.email }} </a>
+       <a>UserName: {{ user.username }} </a> 
+     <li>
+       <a href="{% url 'auth:logout' %}?next={{ request.path }}">Logout</a>
+     </li>
+   {% else %}
+     <li>
+		 <meta http-equiv="refresh" content="0; url=http://localhost:8000/login/" />
+     </li>
+   {% endif %}
+   </ul>
+ </p>
+ </div>
+{% endblock %}

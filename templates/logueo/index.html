@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="es-cr">
+ <head>
+    <title>Inicio</title>
+    <meta name="description" content="Matrix HTML5 Template incorporates metro style display blocks for main menu items. Portfolio page features responsive lightbox gallery. Testimonials and about pages feature 3 tabs." />
+    <meta name="author" content="templatemo">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link href="{{STATIC_URL}}css/bootstrap.min.css" rel="stylesheet">
+    <link href="{{STATIC_URL}}css/font-awesome.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="vcss/templatemo_misc.css">
+    <link type="text/css" rel="stylesheet" href="{{STATIC_URL}}css/easy-responsive-tabs.css" />
+    <link href="{{STATIC_URL}}css/templatemo_style.css" rel="stylesheet"> 
+        
+  <script src="{{STATIC_URL}}js/jquery-1.10.2.min.js"></script> 
+  <script src="{{STATIC_URL}}js/jquery.lightbox.js"></script>
+  <script src="{{STATIC_URL}}js/templatemo_custom.js"></script>
+    <script src="{{STATIC_URL}}js/easyResponsiveTabs.js" type="text/javascript"></script>  
+   </head>
+ <body>
+        <!-- logo start -->
+    <div class="logocontainer">
+      <div class="row">
+        <h1><a rel="nofollow" href="/index/">micalendapp</a></h1>
+        <div class="clear"></div>
+        <div class="templatemo_smalltitle">Agenda Virtual</div>
+       </div>
+    </div>
+    <!-- logo end --> 
+  
+ 
+  <div class="container">
+          <div class="row templatemo_bordergapborder">
+      
+        <div class="templatemo_col37 col-sm-12 templatemo_leftgap templatemo_topgap">
+                  <div class="templatemo_mainimg templatemo_botgap"><img src="{{STATIC_URL}}images/templatemo_service2.jpg" alt="service image"></div>
+                </div>
+              
+                
+                <div class="templatemo_col37 col-sm-12 templatemo_leftgap">
+                  <div class="templatemo_graybg">
+                    <div class="templatemo_frame">
+                  <h2>Acerca de</h2>
+                    <div class="clear"></div>
+                    <p>
+          <b>micalendapp</b> es un sitio que te permite llevar un control ordenado de tus actividades,
+          además de compartir eventos con tus amigos y conocidos.
+          </p>
+                    </div>
+                  </div>
+              </div>
+        <div class="col-md-3 col-sm-12 templatemo_leftgap">
+          <div class="templatemo_maincontact templatemo_botgap">
+            {% if user and not user.is_anonymous %}
+            <div class="templatemo_linkservice"><a href="{% url 'auth:logout' %}?next={{ request.path }}">Logout</a></div>
+            {% else %}
+            <div class="templatemo_linkservice"><a  href="{% url 'social:begin' 'facebook' %}?next=/index">Login Facebook</a></div>
+            {% endif %}
+          </div>
+                  <div class="templatemo_mainimg templatemo_botgap"><img src="{{STATIC_URL}}images/templatemo_service1.jpg" alt="service image"></div> 
+              </div>
+            </div>
+        </div>
+  <!-- logo start -->
+    <div class="logocontainer">
+      <div class="row">
+             <div class="templatemo_footer">  <a rel="nofollow" href="/index/">micalendapp</a> by  Alonso, Javier, Kevin</a></div>
+       </div>
+    </div>
+    <!-- logo end -->  
+  
+   </body>
+</html>

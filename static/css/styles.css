@@ -1,0 +1,23 @@
+
+
+.container{
+
+}
+
+.capas{
+	background: #00BFFF;
+	border: 1px solid #000;
+	display: inline-block;
+	height: 410px;
+	vertical-align: top;
+	width: 100%;
+}
+#form {
+	border-bottom: 1px solid #000;
+	height: 245px;
+	text-align: left;
+	padding: 3px;
+	background: #FFF;
+}
+
+

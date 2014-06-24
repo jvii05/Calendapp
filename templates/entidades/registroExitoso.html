@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+
+  {% if user and not user.is_anonymous %}
+  <div></div>
+  {% else %}
+  <meta HTTP-EQUIV="Refresh" CONTENT="0.01; URL=/login">
+  {% endif %}
+  
+  <head>
+    <title>Registro Exitoso</title>
+    <meta name="description" content="Matrix HTML5 Template incorporates metro style display blocks for main menu items. Portfolio page features responsive lightbox gallery. Testimonials and about pages feature 3 tabs." />
+    <meta name="author" content="templatemo">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link href="{{STATIC_URL}}css/bootstrap.min.css" rel="stylesheet">
+    <link href="{{STATIC_URL}}css/font-awesome.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/templatemo_misc.css">
+   	<link type="text/css" rel="stylesheet" href="{{STATIC_URL}}css/easy-responsive-tabs.css" />
+    <link href="{{STATIC_URL}}css/templatemo_style.css" rel="stylesheet"> 
+        
+	<script src="{{STATIC_URL}}js/jquery-1.10.2.min.js"></script> 
+	<script src="{{STATIC_URL}}js/jquery.lightbox.js"></script>
+	<script src="{{STATIC_URL}}js/templatemo_custom.js"></script>
+    <script src="{{STATIC_URL}}js/easyResponsiveTabs.js" type="text/javascript"></script>  
+  
+  </head>
+  <body>
+    	<!-- logo start -->
+    <div class="logocontainer">
+    	<a rel="nofollow" class="templatemo_footer" href="/login/">logout</a>
+    	<div class="row">
+        	<h1><a rel="nofollow" href="/index/">Registro Exitoso</a></h1>
+            <div class="clear"></div>
+            <div class="templatemo_smalltitle">micalendapp</div>
+       </div>
+    </div>
+
+		<div class="container">
+        	<div class="row templatemo_bordergapborder">
+            	
+                
+                <div class="templatemo_col37 col-sm-12 templatemo_leftgap">
+                	
+              </div>
+			  
+			  <div class="col-md-3 col-sm-12 templatemo_leftgap">
+                	<div class="templatemo_mainimg templatemo_botgap"><img src="{{STATIC_URL}}images/templatemo_home1.jpg" alt="service image"></div>
+                    <div class="templatemo_mainservice templatemo_botgap">
+                	<div class="templatemo_linkservice"><a href="/index/">Volver</a></div>
+                </div>
+                </div>
+                
+            </div>
+        </div>
+
+	    
+
+    
+    </div>
+    
+    	<!-- logo start -->
+    <div class="logocontainer">
+		<div class="row">
+             <div class="templatemo_footer">  <a rel="nofollow" href="/index/">micalendapp</a> by  Alonso, Javier, Kevin</a></div>
+       </div>
+    </div>
+    <!-- logo end -->  
+
+
+  </body>
+</html>
